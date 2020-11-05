@@ -1,0 +1,13 @@
+<h1>Your search result!</h1>
+{{#each character}}
+    <div class="row">
+        <div class="col-6">
+            <img src="{{this.thumbnail.path}}.{{this.thumbnail.extension}}" class="img-fluid" alt="">
+        </div>
+         <div class="col-6">
+            <h3>Name: {{this.name}}</h3>
+            <h5>Description: {{this.description}}</h5>
+        </div>
+    </div>
+
+{{/each}}
